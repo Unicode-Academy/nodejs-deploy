@@ -3,8 +3,8 @@ volumes:
   mariadb:
     driver: local
 networks:
-    db:
-      driver: bridge
+  db:
+    driver: bridge
 services:
   nodejs: 
     build: ./
