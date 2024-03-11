@@ -2,9 +2,9 @@ version: '3'
 volumes:
   mariadb:
     driver: local
-  networks:
+networks:
     db:
-        driver: bridge
+      driver: bridge
 services:
   nodejs: 
     build: ./
