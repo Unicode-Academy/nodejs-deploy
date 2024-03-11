@@ -8,6 +8,8 @@ networks:
 services:
   nodejs: 
     build: ./
+    env_file:
+      - .env
   nginx: 
     build: ./nginx
     ports:
