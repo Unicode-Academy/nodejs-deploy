@@ -10,6 +10,8 @@ services:
     build: ./
     env_file:
       - .env
+    networks:
+      db:  
   nginx: 
     build: ./nginx
     ports:
@@ -19,7 +21,6 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: unicode123
-      MYSQL_ROOT_HOST: '%'
     expose:
         - "3306"
     ports:
